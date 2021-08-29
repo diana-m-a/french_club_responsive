@@ -366,7 +366,7 @@ footer .social-icons p {
   /* Tablet Styles */
  /* General styles */
  .content-wrapper {
-  max-width: 640px;
+  max-width: 740px;
   margin: 60px 0;
 }
 
@@ -452,10 +452,6 @@ footer .social-icons {
     max-width: 960px;
   }
   
-  header {
-    padding: 15px 0;
-  }
-  
   header nav {
     width: 25%;
   }
@@ -473,7 +469,21 @@ footer .social-icons {
     font-size: 1.125em;
     line-height: 1.333;
   }
+ /* Events */
+ .events .events-description {
+   width: 80%;
+ }
 
+ .events .photos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.events .photos figure {
+  width: 30%;
+  box-sizing: border-box;
+}
 }
 
 @media print,
