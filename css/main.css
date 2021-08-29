@@ -236,7 +236,7 @@ footer .social-icons p {
 .hero-area {
   display: flex;
   justify-content: center;
-  background: url("/img/arc-de-triomphe.png") center no-repeat #333;
+  background: url("../img/arc-de-triomphe.png") center no-repeat #333;
   background-size: cover;
   min-height: 400px;
 }
