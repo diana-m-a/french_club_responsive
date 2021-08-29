@@ -145,12 +145,6 @@ address {
   margin: 50px 0;
 }
 
-/* Grid */
- 
-body {
-  display: grid;
-}
-
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -178,7 +172,7 @@ header nav {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
-  width: 65%;
+  width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
@@ -192,7 +186,7 @@ header nav ul {
 }
 
 header nav ul li {
-  font-size: 1.12em;
+  font-size: .9em;
 }
 
 footer {
@@ -368,8 +362,118 @@ footer .social-icons p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 750px) {
+  /* Tablet Styles */
+ /* General styles */
+ .content-wrapper {
+  max-width: 640px;
+  margin: 60px 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+/* Header */
+header {
+  padding: 10px 0;
+}
+
+header .content-wrapper {
+  width: 100%;
+}
+
+header nav {
+  width: 35%;
+}
+
+/* Hero Area */
+.hero-area {
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: .5rem 0;
+}
+ /* Events */
+.events .photos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 4%;
+  padding-top: 1rem;
+}
+
+.events .photos figure {
+  width: 48%;
+  box-sizing: border-box;
+}
+
+/* Footer */
+footer .content-wrapper {
+  width: 66%;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+  line-height: 1.285;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles */
+  /* General styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+  
+  header {
+    padding: 15px 0;
+  }
+  
+  header nav {
+    width: 25%;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+  }
+  
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+  
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
 }
 
 @media print,
